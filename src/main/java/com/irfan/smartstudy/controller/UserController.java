@@ -25,10 +25,4 @@ public class UserController {
         User user = userService.getUserById(id);
         return ResponseEntity.ok(user).getBody();
     }
-
-    @PostMapping("/signup")
-    public ResponseEntity<?> signup(@RequestBody SignupRequest request) {
-        User user = userService.createUser(request);
-        return ResponseEntity.ok(user);
-    }
 }
