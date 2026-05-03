@@ -8,6 +8,6 @@ public class TaskUpdateRequest {
     public String title;
     public String details;
     public LocalDateTime dueDate;
-    public int priority;
+    public Integer priority;
     public String status;
 }

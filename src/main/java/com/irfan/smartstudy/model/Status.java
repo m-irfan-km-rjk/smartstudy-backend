@@ -9,4 +9,13 @@ public enum Status {
     Status(String status) {
         this.status = status;
     }
+
+    public static Status fromString(String value) {
+        for (Status s : Status.values()) {
+            if (s.status.equalsIgnoreCase(value)) {
+                return s;
+            }
+        }
+        throw new IllegalArgumentException("Invalid status: " + value);
+    }
 }
