@@ -20,7 +20,7 @@ RUN ./gradlew build -x test --no-daemon
 
 
 # ---- Run stage ----
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk-jammy
 
 WORKDIR /app
 
