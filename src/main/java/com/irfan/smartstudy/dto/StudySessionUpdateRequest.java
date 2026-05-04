@@ -2,16 +2,12 @@ package com.irfan.smartstudy.dto;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
+
 import java.time.LocalTime;
 
 @Getter
-public class StudySessionRequest {
-    @NotNull
+public class StudySessionUpdateRequest {
     private LocalTime startTime;
-    @NotNull
     private LocalTime endTime;
-    @NotNull
     private Long subjectId;
-    @NotNull
-    private Long userId;
 }
